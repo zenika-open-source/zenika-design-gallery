@@ -1,43 +1,32 @@
-# Astro Starter Kit: Minimal
+# 🎨 Zenika Design Gallery
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Ce projet est une vitrine regroupant nos plus beaux visuels créés pour les conférences (DevFest, Mix-IT, Devoxx, etc.) et les événements Zenika.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📸 Comment ajouter un nouveau visuel ?
 
-## 🚀 Project Structure
+1.  Ajoutez votre image dans le dossier `public/img/visuals/`.
+2.  Ajoutez une nouvelle entrée dans `src/data/visuals.json` :
+    ```json
+    {
+      "id": "nom-unique",
+      "title": "Titre du Visuel",
+      "occasion": "Courte description de l'événement",
+      "year": 2024,
+      "image": "/img/visuals/votre-image.png"
+    }
+    ```
 
-Inside of your Astro project, you'll see the following folders and files:
+##  Genie Commands
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Commande                  | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm run dev`             | Lance le serveur local sur `localhost:4321`      |
+| `npm run build`           | Compile le site statique dans `./dist/`          |
+| `npm run preview`         | Prévisualise le build localement                 |
 
-## 👀 Want to learn more?
+## 🚢 Déploiement
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Le site est configuré pour se déployer automatiquement sur **GitHub Pages** via GitHub Actions à chaque push sur la branche `main`.
+
+![with love by zenika](https://img.shields.io/badge/With%20%E2%9D%A4%EF%B8%8F%20by-Zenika-b51432.svg?link=https://oss.zenika.com)
