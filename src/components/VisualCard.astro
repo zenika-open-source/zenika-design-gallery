@@ -7,11 +7,13 @@ interface Props {
 }
 
 const { title, occasion, year, image } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const fullImagePath = image.startsWith('/') ? `${baseUrl}${image.slice(1)}` : `${baseUrl}${image}`;
 ---
 
-<div class="card hover-lift" data-lightbox data-image={image} data-title={title} data-occasion={occasion}>
+<div class="card hover-lift" data-lightbox data-image={fullImagePath} data-title={title} data-occasion={occasion}>
 	<div class="image-container">
-		<img src={image} alt={title} loading="lazy" />
+		<img src={fullImagePath} alt={title} loading="lazy" />
 		<div class="year-badge">{year}</div>
 	</div>
 	<div class="content">
