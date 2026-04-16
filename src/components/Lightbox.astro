@@ -1,0 +1,139 @@
+---
+---
+
+<dialog id="lightbox-dialog" class="lightbox">
+	<div class="lightbox-content">
+		<button id="close-lightbox" class="close-btn" aria-label="Fermer">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+		</button>
+		<img id="lightbox-img" src="" alt="" />
+		<div class="lightbox-info">
+			<h2 id="lightbox-title"></h2>
+			<p id="lightbox-description"></p>
+		</div>
+	</div>
+</dialog>
+
+<script>
+	function setupLightbox() {
+		const dialog = document.getElementById('lightbox-dialog') as HTMLDialogElement;
+		const closeBtn = document.getElementById('close-lightbox');
+		const img = document.getElementById('lightbox-img') as HTMLImageElement;
+		const title = document.getElementById('lightbox-title');
+		const description = document.getElementById('lightbox-description');
+		const cards = document.querySelectorAll('[data-lightbox]');
+
+		cards.forEach(card => {
+			card.addEventListener('click', () => {
+				const { image, title: text, occasion } = (card as HTMLElement).dataset;
+				if (img && title && description && dialog) {
+					img.src = image || '';
+					img.alt = text || '';
+					title.textContent = text || '';
+					description.textContent = occasion || '';
+					dialog.showModal();
+				}
+			});
+		});
+
+		closeBtn?.addEventListener('click', () => {
+			dialog?.close();
+		});
+
+		// Close on click outside
+		dialog?.addEventListener('click', (e) => {
+			const dialogDimensions = dialog.getBoundingClientRect();
+			if (
+				e.clientX < dialogDimensions.left ||
+				e.clientX > dialogDimensions.right ||
+				e.clientY < dialogDimensions.top ||
+				e.clientY > dialogDimensions.bottom
+			) {
+				dialog.close();
+			}
+		});
+	}
+
+	// Setup on initial load
+	setupLightbox();
+
+	// Setup on view transitions
+	document.addEventListener('astro:after-swap', setupLightbox);
+</script>
+
+<style>
+	.lightbox {
+		padding: 0;
+		border: none;
+		background: transparent;
+		max-width: 90vw;
+		max-height: 90vh;
+		border-radius: var(--border-radius);
+		overflow: hidden;
+	}
+
+	.lightbox::backdrop {
+		background: rgba(0, 0, 0, 0.85);
+		backdrop-filter: blur(8px);
+	}
+
+	.lightbox-content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: var(--zenika-white);
+		width: 100%;
+		height: 100%;
+		min-height: 200px;
+	}
+
+	.close-btn {
+		position: absolute;
+		top: var(--spacing-md);
+		right: var(--spacing-md);
+		background: var(--zenika-red);
+		color: white;
+		border: none;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		z-index: 10;
+		transition: var(--transition-smooth);
+		box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+	}
+
+	.close-btn:hover {
+		transform: rotate(90deg) scale(1.1);
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 75vh;
+		width: auto;
+		height: auto;
+		display: block;
+		object-fit: contain;
+		background: #f0f0f0;
+	}
+
+	.lightbox-info {
+		padding: var(--spacing-lg);
+		text-align: center;
+	}
+
+	h2 {
+		margin-bottom: var(--spacing-sm);
+		font-size: 1.5rem;
+		color: var(--zenika-black);
+	}
+
+	p {
+		color: #666;
+	}
+</style>

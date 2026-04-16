@@ -1,0 +1,23 @@
+[
+  {
+    "id": "devfest-2025",
+    "title": "DevFest 2025",
+    "occasion": "Visuel créé pour l'édition 2025 du DevFest.",
+    "year": 2025,
+    "image": "/img/visuals/DevFest2025.png"
+  },
+  {
+    "id": "devfest-2024",
+    "title": "DevFest 2024",
+    "occasion": "Design pour la conférence DevFest 2024.",
+    "year": 2024,
+    "image": "/img/visuals/Devfest_2024.png"
+  },
+  {
+    "id": "devfest-2018",
+    "title": "DevFest 2018",
+    "occasion": "Souvenir du visuel pour le DevFest 2018.",
+    "year": 2018,
+    "image": "/img/visuals/DevFest_2018.jpg"
+  }
+]

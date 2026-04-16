@@ -1,0 +1,61 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Zenika Design Gallery - Une collection de nos plus beaux visuels événementiels." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Zenika Design Gallery</title>
+		<ClientRouter />
+	</head>
+	<body>
+		<header>
+			<nav class="container">
+				<div class="logo">
+					<span class="text-red">Zenika</span> Design Gallery
+				</div>
+			</nav>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer class="container text-center section-padding">
+			<p>&copy; {new Date().getFullYear()} Zenika. Made with ❤️ by Zenika</p>
+		</footer>
+		<style>
+			header {
+				padding: var(--spacing-lg) 0;
+				border-bottom: 1px solid var(--zenika-gray);
+				position: sticky;
+				top: 0;
+				background: rgba(255, 255, 255, 0.9);
+				backdrop-filter: blur(10px);
+				z-index: 100;
+			}
+			.logo {
+				font-size: 1.5rem;
+				font-weight: 800;
+				text-transform: uppercase;
+				letter-spacing: -1px;
+			}
+			footer {
+				margin-top: var(--spacing-xl);
+				border-top: 1px solid var(--zenika-gray);
+				font-size: 0.9rem;
+				opacity: 0.6;
+			}
+		</style>
+	</body>
+</html>
