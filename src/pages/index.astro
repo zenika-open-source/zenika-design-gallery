@@ -2,7 +2,13 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import VisualCard from '../components/VisualCard.astro';
 import Lightbox from '../components/Lightbox.astro';
-import visuals from '../data/visuals.json';
+import visualsData from '../data/visuals.json';
+
+const visuals = [...visualsData].sort((a, b) => {
+	const yearA = parseInt(a.year as unknown as string) || 0;
+	const yearB = parseInt(b.year as unknown as string) || 0;
+	return yearB - yearA;
+});
 ---
 
 <MainLayout title="Accueil">
@@ -19,6 +25,7 @@ import visuals from '../data/visuals.json';
 					occasion={visual.occasion}
 					year={visual.year}
 					image={visual.image}
+					video={visual.video}
 				/>
 			))}
 		</div>

@@ -51,92 +51,92 @@
   {
     "id": "born-to-root-and-roll",
     "title": "Born to root and roll",
-    "occasion": "Visuel T-shirt",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Born-to-root-and-roll.png"
   },
   {
     "id": "coding-the-stars",
     "title": "Coding The Stars",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding The Stars.png"
   },
   {
     "id": "coding-the-world-lah-singapore",
     "title": "Coding The World Lah-Singapore",
-    "occasion": "Visuel pour Singapour",
-    "year": 2024,
+    "occasion": "Zenika Singapour",
+    "year": "",
     "image": "/img/visuals/Coding The World Lah-Singapore.png"
   },
   {
     "id": "coding-the-patiito",
     "title": "Coding the patiito",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the patiito.jpg"
   },
   {
     "id": "coding-the-race",
     "title": "Coding the race",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the race.png"
   },
   {
     "id": "coding-the-robot",
     "title": "Coding the robot",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the robot.png"
   },
   {
     "id": "coding-the-world-with-zenika-fond-blanc",
     "title": "Coding the world with Zenika (fond blanc)",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the world with Zenika fond blanc.png"
   },
   {
     "id": "coding-the-world-with-zenika-fond-noir",
     "title": "Coding the world with Zenika (fond noir)",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the world with Zenika fond noir.png"
   },
   {
     "id": "coding-with-green-chaud",
     "title": "Coding with green chaud",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Zenika Cloud",
+    "year": "",
     "image": "/img/visuals/Coding with green chaud.png"
   },
   {
     "id": "hello-green-world",
     "title": "HELLO GREEN WORLD",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Zenika GreenIT",
+    "year": "",
     "image": "/img/visuals/HELLOGREENWORLD.png"
   },
   {
     "id": "in-pissette-we-trust",
     "title": "In Pissette We Trust",
     "occasion": "Visuel Lille",
-    "year": 2024,
+    "year": "",
     "image": "/img/visuals/In Pissette We Trust.jpg"
   },
   {
     "id": "recoding-the-80s-legacy",
     "title": "Recoding the 80's legacy",
     "occasion": "Visuel générique",
-    "year": 2024,
+    "year": "",
     "image": "/img/visuals/Recoding the 80_s legacy.png"
   },
   {
     "id": "coding-the-chocolatine",
     "title": "Coding the chocolatine",
-    "occasion": "Visuel Toulouse",
-    "year": 2024,
+    "occasion": "Bdx IO",
+    "year": "",
     "image": "/img/visuals/coding-the-chocolatine.png"
   },
   {
@@ -208,5 +208,124 @@
     "occasion": "Zenika Open Source",
     "year": 2023,
     "image": "/img/visuals/zenika-open-source-with-text.png"
+  },
+  {
+    "id": "bingoz",
+    "title": "Bingoz",
+    "occasion": "Bingoz",
+    "year": 2025,
+    "image": "/img/visuals/Bingoz.png"
+  },
+  {
+    "id": "code-until-extinction",
+    "title": "Code Until Extinction",
+    "occasion": "Visuel générique",
+    "year": 2023,
+    "image": "/img/visuals/CodeUntilExtinction.png"
+  },
+  {
+    "id": "jurassic-code",
+    "title": "Jurassic Code",
+    "occasion": "Visuel générique",
+    "year": 2023,
+    "image": "/img/visuals/Jurassic-code.png"
+  },
+  {
+    "id": "rennes-fablab",
+    "title": "Rennes FABLAB",
+    "occasion": "Visuel agence Rennes",
+    "year": 2026,
+    "image": "/img/visuals/Rennes-FABLAB.jpg"
+  },
+  {
+    "id": "rennes-sallepause",
+    "title": "Rennes Salle Pause",
+    "occasion": "Visuel agence Rennes",
+    "year": 2026,
+    "image": "/img/visuals/Rennes-SALLEPAUSE.jpg"
+  },
+  {
+    "id": "zenikar",
+    "title": "Zenikar",
+    "occasion": "Zenikar",
+    "year": 2024,
+    "image": "/img/visuals/Zenikar.png"
+  },
+  {
+    "id": "zenikast",
+    "title": "Zenikast",
+    "occasion": "Zenikast - visuel",
+    "year": 2023,
+    "image": "/img/visuals/Zenikast.png"
+  },
+  {
+    "id": "bache-avec-oeillet",
+    "title": "Rennes - Breizhcamp - Bâche avec oeillet",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/bache-avec-oeillet.jpg"
+  },
+  {
+    "id": "jurassic-stack",
+    "title": "Breizhcamp 2023 - Jurassic Stack",
+    "occasion": "Breizhcamp 2023",
+    "year": 2023,
+    "image": "/img/visuals/jurassic-stack.jpg"
+  },
+  {
+    "id": "logo-ecocup",
+    "title": "Breizhcamp 2024 - Logo Ecocup",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/logo-ecocup.png"
+  },
+  {
+    "id": "sticker-extinction",
+    "title": "Breizhcamp 2024 - Sticker Extinction",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/sticker-extinction.jpg"
+  },
+  {
+    "id": "sticker-patch",
+    "title": "Breizhcamp 2024 - Sticker Patch",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/sticker-patch.jpg"
+  },
+  {
+    "id": "sticker-stack",
+    "title": "Breizhcamp 2023 - Sticker Stack",
+    "occasion": "Breizhcamp 2023",
+    "year": 2023,
+    "image": "/img/visuals/sticker-stack.jpg"
+  },
+  {
+    "id": "sticker-tricerat",
+    "title": "Breizhcamp 2023 - Sticker Tricerat",
+    "occasion": "Breizhcamp 2023",
+    "year": 2023,
+    "image": "/img/visuals/sticker-tricerat.jpg"
+  },
+  {
+    "id": "zenikanard-secu",
+    "title": "Zenikanard Sécu",
+    "occasion": "Rennes - Formation sécurité",
+    "year": 2024,
+    "image": "/img/visuals/zenikanard_secu.jpg"
+  },
+  {
+    "id": "zenikast-intro",
+    "title": "Zenikast Intro",
+    "occasion": "Zenikast - intro",
+    "year": 2023,
+    "video": "/videos/Zenikast-intro.mp4"
+  },
+  {
+    "id": "zenikanard-oss",
+    "title": "Zenikanard Zenika Open Source",
+    "occasion": "Zenika Open Source",
+    "year": 2025,
+    "video": "/videos/zenikanard-oss.mp4"
   }
 ]
