@@ -19,5 +19,159 @@
     "occasion": "Souvenir du visuel pour le DevFest 2018.",
     "year": 2018,
     "image": "/img/visuals/DevFest_2018.jpg"
+  },
+  {
+    "id": "born-to-root-and-roll",
+    "title": "Born to root and roll",
+    "occasion": "Visuel T-shirt",
+    "year": 2024,
+    "image": "/img/visuals/Born-to-root-and-roll.png"
+  },
+  {
+    "id": "coding-the-stars",
+    "title": "Coding The Stars",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Coding The Stars.png"
+  },
+  {
+    "id": "coding-the-world-lah-singapore",
+    "title": "Coding The World Lah-Singapore",
+    "occasion": "Visuel pour Singapour",
+    "year": 2024,
+    "image": "/img/visuals/Coding The World Lah-Singapore.png"
+  },
+  {
+    "id": "coding-the-patiito",
+    "title": "Coding the patiito",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Coding the patiito.jpg"
+  },
+  {
+    "id": "coding-the-race",
+    "title": "Coding the race",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Coding the race.png"
+  },
+  {
+    "id": "coding-the-robot",
+    "title": "Coding the robot",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Coding the robot.png"
+  },
+  {
+    "id": "coding-the-world-with-zenika-fond-blanc",
+    "title": "Coding the world with Zenika (fond blanc)",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Coding the world with Zenika fond blanc.png"
+  },
+  {
+    "id": "coding-the-world-with-zenika-fond-noir",
+    "title": "Coding the world with Zenika (fond noir)",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Coding the world with Zenika fond noir.png"
+  },
+  {
+    "id": "coding-with-green-chaud",
+    "title": "Coding with green chaud",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Coding with green chaud.png"
+  },
+  {
+    "id": "hello-green-world",
+    "title": "HELLO GREEN WORLD",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/HELLOGREENWORLD.png"
+  },
+  {
+    "id": "in-pissette-we-trust",
+    "title": "In Pissette We Trust",
+    "occasion": "Visuel Lille",
+    "year": 2024,
+    "image": "/img/visuals/In Pissette We Trust.jpg"
+  },
+  {
+    "id": "recoding-the-80s-legacy",
+    "title": "Recoding the 80's legacy",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Recoding the 80_s legacy.png"
+  },
+  {
+    "id": "rocking-the-code",
+    "title": "Rocking The Code",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/Rocking The Code.png"
+  },
+  {
+    "id": "coding-the-chocolatine",
+    "title": "Coding the chocolatine",
+    "occasion": "Visuel Toulouse",
+    "year": 2024,
+    "image": "/img/visuals/coding-the-chocolatine.png"
+  },
+  {
+    "id": "coding-the-future",
+    "title": "Coding the future",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/coding-the-future.png"
+  },
+  {
+    "id": "coding-the-water",
+    "title": "Coding the water",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/coding-the-water.png"
+  },
+  {
+    "id": "coding-the-welsch",
+    "title": "Coding the welsch",
+    "occasion": "Visuel Lille",
+    "year": 2024,
+    "image": "/img/visuals/coding-the-welsch.png"
+  },
+  {
+    "id": "coding-the-world-sticker",
+    "title": "Coding the WORLD (Sticker)",
+    "occasion": "Sticker générique",
+    "year": 2024,
+    "image": "/img/visuals/codingtheWORLD-STICKER.png"
+  },
+  {
+    "id": "coding-the-snow",
+    "title": "Coding the snow",
+    "occasion": "Visuel hiver",
+    "year": 2024,
+    "image": "/img/visuals/codingthesnow.png"
+  },
+  {
+    "id": "coding-the-univers",
+    "title": "Coding the univers",
+    "occasion": "Visuel générique",
+    "year": 2024,
+    "image": "/img/visuals/codingtheunivers.png"
+  },
+  {
+    "id": "ghosting-the-world",
+    "title": "Ghosting the world",
+    "occasion": "Visuel Halloween",
+    "year": 2024,
+    "image": "/img/visuals/ghosting-th-world.png"
+  },
+  {
+    "id": "hacking-the-world",
+    "title": "Hacking the world",
+    "occasion": "Visuel hacking",
+    "year": 2024,
+    "image": "/img/visuals/hacking the world.png"
   }
 ]
