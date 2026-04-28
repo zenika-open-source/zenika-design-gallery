@@ -34,12 +34,19 @@
 		const cards = Array.from(document.querySelectorAll('[data-lightbox]')) as HTMLElement[];
 		let currentIndex = 0;
 
+		function getVisibleCards() {
+			return Array.from(document.querySelectorAll('[data-lightbox]:not(.hidden)')) as HTMLElement[];
+		}
+
 		function showCard(index: number) {
-			if (index < 0) index = cards.length - 1;
-			if (index >= cards.length) index = 0;
+			const visibleCards = getVisibleCards();
+			if (visibleCards.length === 0) return;
+			
+			if (index < 0) index = visibleCards.length - 1;
+			if (index >= visibleCards.length) index = 0;
 			currentIndex = index;
 			
-			const card = cards[currentIndex];
+			const card = visibleCards[currentIndex];
 			if (!card) return;
 
 			const { image, video: vidSrc, title: text, occasion } = card.dataset;
@@ -60,10 +67,14 @@
 			}
 		}
 
-		cards.forEach((card, index) => {
+		cards.forEach((card) => {
 			card.addEventListener('click', () => {
-				showCard(index);
-				dialog?.showModal();
+				const visibleCards = getVisibleCards();
+				const index = visibleCards.indexOf(card);
+				if (index !== -1) {
+					showCard(index);
+					dialog?.showModal();
+				}
 			});
 		});
 
