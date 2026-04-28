@@ -37,12 +37,16 @@ const fullImagePath = image.startsWith('/') ? `${baseUrl}${image.slice(1)}` : `$
 		position: relative;
 		aspect-ratio: 16 / 9;
 		overflow: hidden;
+		background-color: var(--zenika-gray-light);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.image-container img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: contain;
 		transition: var(--transition-smooth);
 	}
 
