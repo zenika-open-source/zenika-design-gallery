@@ -19,13 +19,35 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Zenika Design Gallery</title>
 		<ClientRouter />
+		<script is:inline>
+			const theme = (() => {
+				if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+					return localStorage.getItem('theme');
+				}
+				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					return 'dark';
+				}
+				return 'light';
+			})();
+
+			if (theme === 'light') {
+				document.documentElement.classList.remove('dark');
+			} else {
+				document.documentElement.classList.add('dark');
+			}
+			window.localStorage.setItem('theme', theme);
+		</script>
 	</head>
 	<body>
 		<header>
-			<nav class="container">
+			<nav class="container nav-content">
 				<div class="logo">
 					<span class="text-red">Zenika</span> Design Gallery
 				</div>
+				<button id="theme-toggle" aria-label="Basculer le thème clair/sombre">
+					<svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+					<svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon hidden-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+				</button>
 			</nav>
 		</header>
 		<main>
@@ -34,15 +56,79 @@ const { title } = Astro.props;
 		<footer class="container text-center section-padding">
 			<p>&copy; {new Date().getFullYear()} Zenika. Made with ❤️ by Zenika</p>
 		</footer>
+
+		<script>
+			function setupThemeToggle() {
+				const themeToggle = document.getElementById('theme-toggle');
+				const moonIcon = document.getElementById('theme-icon-moon');
+				const sunIcon = document.getElementById('theme-icon-sun');
+
+				if (!themeToggle) return;
+
+				const updateIcons = () => {
+					const isDark = document.documentElement.classList.contains('dark');
+					if (isDark) {
+						moonIcon?.classList.add('hidden-icon');
+						sunIcon?.classList.remove('hidden-icon');
+					} else {
+						sunIcon?.classList.add('hidden-icon');
+						moonIcon?.classList.remove('hidden-icon');
+					}
+				};
+
+				updateIcons();
+
+				// We replace instead of adding another listener if setupThemeToggle is called multiple times on swap.
+				// For Astro view transitions, it's safe to just attach.
+				themeToggle.onclick = () => {
+					const element = document.documentElement;
+					element.classList.toggle('dark');
+					localStorage.setItem('theme', element.classList.contains('dark') ? 'dark' : 'light');
+					updateIcons();
+				};
+			}
+
+			setupThemeToggle();
+			document.addEventListener('astro:after-swap', setupThemeToggle);
+		</script>
+
 		<style>
 			header {
 				padding: var(--spacing-lg) 0;
 				border-bottom: 1px solid var(--zenika-gray);
 				position: sticky;
 				top: 0;
-				background: rgba(255, 255, 255, 0.9);
+				background: var(--header-bg);
 				backdrop-filter: blur(10px);
 				z-index: 100;
+				transition: background-color 0.3s ease, border-color 0.3s ease;
+			}
+			.nav-content {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#theme-toggle {
+				background: transparent;
+				border: none;
+				color: var(--zenika-black);
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 8px;
+				border-radius: 50%;
+				transition: var(--transition-smooth);
+			}
+			#theme-toggle:hover {
+				background: var(--zenika-gray-light);
+			}
+			.theme-icon {
+				width: 24px;
+				height: 24px;
+			}
+			.hidden-icon {
+				display: none;
 			}
 			.logo {
 				font-size: 1.5rem;
