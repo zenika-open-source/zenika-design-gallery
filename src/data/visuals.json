@@ -1,24 +1,52 @@
 [
   {
     "id": "devfest-2025",
-    "title": "DevFest 2025",
-    "occasion": "Visuel créé pour l'édition 2025 du DevFest.",
+    "title": "DevFest Nantes 2025",
+    "occasion": "Design pour la conférence DevFest Nantes 2025.",
     "year": 2025,
-    "image": "/img/visuals/DevFest2025.png"
+    "image": "/img/visuals/Devfest_Nantes_2025.png"
   },
   {
     "id": "devfest-2024",
-    "title": "DevFest 2024",
-    "occasion": "Design pour la conférence DevFest 2024.",
+    "title": "DevFest Nantes 2024",
+    "occasion": "Design pour la conférence DevFest Nantes 2024.",
     "year": 2024,
-    "image": "/img/visuals/Devfest_2024.png"
+    "image": "/img/visuals/Devfest_Nantes_2024.png"
+  },
+  {
+    "id": "devfest-2023",
+    "title": "DevFest Nantes 2023",
+    "occasion": "Design pour la conférence DevFest Nantes 2023.",
+    "year": 2023,
+    "image": "/img/visuals/Devfest_Nantes_2023.png"
+  },
+  {
+    "id": "devfest-2022",
+    "title": "DevFest Nantes 2022",
+    "occasion": "Design pour la conférence DevFest Nantes 2022.",
+    "year": 2022,
+    "image": "/img/visuals/Devfest_Nantes_2022.png"
+  },
+  {
+    "id": "devfest-2021",
+    "title": "DevFest Nantes 2021",
+    "occasion": "Design pour la conférence DevFest Nantes 2021.",
+    "year": 2021,
+    "image": "/img/visuals/Devfest_Nantes_2021.png"
+  },
+  {
+    "id": "devfest-2019",
+    "title": "DevFest Nantes 2019",
+    "occasion": "Design pour la conférence DevFest Nantes 2019.",
+    "year": 2019,
+    "image": "/img/visuals/Devfest_Nantes_2019.png"
   },
   {
     "id": "devfest-2018",
-    "title": "DevFest 2018",
-    "occasion": "Souvenir du visuel pour le DevFest 2018.",
+    "title": "DevFest Nantes 2018",
+    "occasion": "Souvenir du visuel pour le DevFest Nantes 2018.",
     "year": 2018,
-    "image": "/img/visuals/DevFest_2018.jpg"
+    "image": "/img/visuals/Devfest_Nantes_2018.jpg"
   },
   {
     "id": "born-to-root-and-roll",
@@ -105,13 +133,6 @@
     "image": "/img/visuals/Recoding the 80_s legacy.png"
   },
   {
-    "id": "rocking-the-code",
-    "title": "Rocking The Code",
-    "occasion": "Visuel générique",
-    "year": 2024,
-    "image": "/img/visuals/Rocking The Code.png"
-  },
-  {
     "id": "coding-the-chocolatine",
     "title": "Coding the chocolatine",
     "occasion": "Visuel Toulouse",
@@ -173,5 +194,19 @@
     "occasion": "Visuel hacking",
     "year": 2024,
     "image": "/img/visuals/hacking the world.png"
+  },
+  {
+    "id": "zenika-open-source",
+    "title": "Zenika Open Source",
+    "occasion": "Zenika Open Source",
+    "year": 2023,
+    "image": "/img/visuals/zenika-open-source.png"
+  },
+  {
+    "id": "zenika-open-source-with-text",
+    "title": "Zenika Open Source",
+    "occasion": "Zenika Open Source",
+    "year": 2023,
+    "image": "/img/visuals/zenika-open-source-with-text.png"
   }
 ]
