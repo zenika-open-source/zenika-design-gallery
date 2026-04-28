@@ -2,7 +2,13 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import VisualCard from '../components/VisualCard.astro';
 import Lightbox from '../components/Lightbox.astro';
-import visuals from '../data/visuals.json';
+import visualsData from '../data/visuals.json';
+
+const visuals = [...visualsData].sort((a, b) => {
+	const yearA = parseInt(a.year as unknown as string) || 0;
+	const yearB = parseInt(b.year as unknown as string) || 0;
+	return yearB - yearA;
+});
 ---
 
 <MainLayout title="Accueil">
@@ -12,6 +18,12 @@ import visuals from '../data/visuals.json';
 			<p class="subtitle">Une rétrospective des visuels créés pour les conférences et événements Zenika.</p>
 		</div>
 
+		<div class="filters">
+			<button class="filter-btn active" data-filter="all">Tous</button>
+			<button class="filter-btn" data-filter="image">Images</button>
+			<button class="filter-btn" data-filter="video">Vidéos</button>
+		</div>
+
 		<div class="gallery-grid">
 			{visuals.map((visual) => (
 				<VisualCard 
@@ -19,14 +31,72 @@ import visuals from '../data/visuals.json';
 					occasion={visual.occasion}
 					year={visual.year}
 					image={visual.image}
+					video={visual.video}
+					type={visual.type}
 				/>
 			))}
 		</div>
 	</section>
 	<Lightbox />
+
+	<script>
+		function setupFilters() {
+			const filterBtns = document.querySelectorAll('.filter-btn');
+			const cards = document.querySelectorAll('.visual-card');
+
+			filterBtns.forEach(btn => {
+				btn.addEventListener('click', () => {
+					filterBtns.forEach(b => b.classList.remove('active'));
+					btn.classList.add('active');
+
+					const filterValue = (btn as HTMLElement).dataset.filter;
+
+					cards.forEach(card => {
+						const cardType = (card as HTMLElement).dataset.type;
+						if (filterValue === 'all' || cardType === filterValue) {
+							card.classList.remove('hidden');
+						} else {
+							card.classList.add('hidden');
+						}
+					});
+				});
+			});
+		}
+
+		setupFilters();
+		document.addEventListener('astro:after-swap', setupFilters);
+	</script>
 </MainLayout>
 
 <style>
+	.filters {
+		display: flex;
+		justify-content: center;
+		gap: var(--spacing-md);
+		margin-bottom: var(--spacing-xl);
+	}
+
+	.filter-btn {
+		padding: 8px 24px;
+		border: 2px solid var(--zenika-red);
+		background: transparent;
+		color: var(--zenika-red);
+		border-radius: 30px;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 1rem;
+		transition: var(--transition-smooth);
+	}
+
+	.filter-btn.active, .filter-btn:hover {
+		background: var(--zenika-red);
+		color: var(--zenika-white);
+	}
+
+	:global(.hidden) {
+		display: none !important;
+	}
+
 	.hero {
 		text-align: center;
 		margin-bottom: var(--spacing-xl);

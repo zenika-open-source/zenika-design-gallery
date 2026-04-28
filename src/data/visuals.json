@@ -1,6 +1,7 @@
 [
   {
     "id": "devfest-2025",
+    "type": "image",
     "title": "DevFest Nantes 2025",
     "occasion": "Design pour la conférence DevFest Nantes 2025.",
     "year": 2025,
@@ -8,6 +9,7 @@
   },
   {
     "id": "devfest-2024",
+    "type": "image",
     "title": "DevFest Nantes 2024",
     "occasion": "Design pour la conférence DevFest Nantes 2024.",
     "year": 2024,
@@ -15,6 +17,7 @@
   },
   {
     "id": "devfest-2023",
+    "type": "image",
     "title": "DevFest Nantes 2023",
     "occasion": "Design pour la conférence DevFest Nantes 2023.",
     "year": 2023,
@@ -22,6 +25,7 @@
   },
   {
     "id": "devfest-2022",
+    "type": "image",
     "title": "DevFest Nantes 2022",
     "occasion": "Design pour la conférence DevFest Nantes 2022.",
     "year": 2022,
@@ -29,6 +33,7 @@
   },
   {
     "id": "devfest-2021",
+    "type": "image",
     "title": "DevFest Nantes 2021",
     "occasion": "Design pour la conférence DevFest Nantes 2021.",
     "year": 2021,
@@ -36,6 +41,7 @@
   },
   {
     "id": "devfest-2019",
+    "type": "image",
     "title": "DevFest Nantes 2019",
     "occasion": "Design pour la conférence DevFest Nantes 2019.",
     "year": 2019,
@@ -43,6 +49,7 @@
   },
   {
     "id": "devfest-2018",
+    "type": "image",
     "title": "DevFest Nantes 2018",
     "occasion": "Souvenir du visuel pour le DevFest Nantes 2018.",
     "year": 2018,
@@ -50,97 +57,111 @@
   },
   {
     "id": "born-to-root-and-roll",
+    "type": "image",
     "title": "Born to root and roll",
-    "occasion": "Visuel T-shirt",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Born-to-root-and-roll.png"
   },
   {
     "id": "coding-the-stars",
+    "type": "image",
     "title": "Coding The Stars",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding The Stars.png"
   },
   {
     "id": "coding-the-world-lah-singapore",
+    "type": "image",
     "title": "Coding The World Lah-Singapore",
-    "occasion": "Visuel pour Singapour",
-    "year": 2024,
+    "occasion": "Zenika Singapour",
+    "year": "",
     "image": "/img/visuals/Coding The World Lah-Singapore.png"
   },
   {
     "id": "coding-the-patiito",
+    "type": "image",
     "title": "Coding the patiito",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the patiito.jpg"
   },
   {
     "id": "coding-the-race",
+    "type": "image",
     "title": "Coding the race",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the race.png"
   },
   {
     "id": "coding-the-robot",
+    "type": "image",
     "title": "Coding the robot",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the robot.png"
   },
   {
     "id": "coding-the-world-with-zenika-fond-blanc",
+    "type": "image",
     "title": "Coding the world with Zenika (fond blanc)",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the world with Zenika fond blanc.png"
   },
   {
     "id": "coding-the-world-with-zenika-fond-noir",
+    "type": "image",
     "title": "Coding the world with Zenika (fond noir)",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Visuel Zenika",
+    "year": "",
     "image": "/img/visuals/Coding the world with Zenika fond noir.png"
   },
   {
     "id": "coding-with-green-chaud",
+    "type": "image",
     "title": "Coding with green chaud",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Zenika Cloud",
+    "year": "",
     "image": "/img/visuals/Coding with green chaud.png"
   },
   {
     "id": "hello-green-world",
+    "type": "image",
     "title": "HELLO GREEN WORLD",
-    "occasion": "Visuel générique",
-    "year": 2024,
+    "occasion": "Zenika GreenIT",
+    "year": "",
     "image": "/img/visuals/HELLOGREENWORLD.png"
   },
   {
     "id": "in-pissette-we-trust",
+    "type": "image",
     "title": "In Pissette We Trust",
     "occasion": "Visuel Lille",
-    "year": 2024,
+    "year": "",
     "image": "/img/visuals/In Pissette We Trust.jpg"
   },
   {
     "id": "recoding-the-80s-legacy",
+    "type": "image",
     "title": "Recoding the 80's legacy",
     "occasion": "Visuel générique",
-    "year": 2024,
+    "year": "",
     "image": "/img/visuals/Recoding the 80_s legacy.png"
   },
   {
     "id": "coding-the-chocolatine",
+    "type": "image",
     "title": "Coding the chocolatine",
-    "occasion": "Visuel Toulouse",
-    "year": 2024,
+    "occasion": "Bdx IO",
+    "year": "",
     "image": "/img/visuals/coding-the-chocolatine.png"
   },
   {
     "id": "coding-the-future",
+    "type": "image",
     "title": "Coding the future",
     "occasion": "Visuel générique",
     "year": 2024,
@@ -148,6 +169,7 @@
   },
   {
     "id": "coding-the-water",
+    "type": "image",
     "title": "Coding the water",
     "occasion": "Visuel générique",
     "year": 2024,
@@ -155,6 +177,7 @@
   },
   {
     "id": "coding-the-welsch",
+    "type": "image",
     "title": "Coding the welsch",
     "occasion": "Visuel Lille",
     "year": 2024,
@@ -162,6 +185,7 @@
   },
   {
     "id": "coding-the-world-sticker",
+    "type": "image",
     "title": "Coding the WORLD (Sticker)",
     "occasion": "Sticker générique",
     "year": 2024,
@@ -169,6 +193,7 @@
   },
   {
     "id": "coding-the-snow",
+    "type": "image",
     "title": "Coding the snow",
     "occasion": "Visuel hiver",
     "year": 2024,
@@ -176,6 +201,7 @@
   },
   {
     "id": "coding-the-univers",
+    "type": "image",
     "title": "Coding the univers",
     "occasion": "Visuel générique",
     "year": 2024,
@@ -183,6 +209,7 @@
   },
   {
     "id": "ghosting-the-world",
+    "type": "image",
     "title": "Ghosting the world",
     "occasion": "Visuel Halloween",
     "year": 2024,
@@ -190,6 +217,7 @@
   },
   {
     "id": "hacking-the-world",
+    "type": "image",
     "title": "Hacking the world",
     "occasion": "Visuel hacking",
     "year": 2024,
@@ -197,6 +225,7 @@
   },
   {
     "id": "zenika-open-source",
+    "type": "image",
     "title": "Zenika Open Source",
     "occasion": "Zenika Open Source",
     "year": 2023,
@@ -204,9 +233,146 @@
   },
   {
     "id": "zenika-open-source-with-text",
+    "type": "image",
     "title": "Zenika Open Source",
     "occasion": "Zenika Open Source",
     "year": 2023,
     "image": "/img/visuals/zenika-open-source-with-text.png"
+  },
+  {
+    "id": "bingoz",
+    "type": "image",
+    "title": "Bingoz",
+    "occasion": "Bingoz",
+    "year": 2025,
+    "image": "/img/visuals/Bingoz.png"
+  },
+  {
+    "id": "code-until-extinction",
+    "type": "image",
+    "title": "Code Until Extinction",
+    "occasion": "Visuel générique",
+    "year": 2023,
+    "image": "/img/visuals/CodeUntilExtinction.png"
+  },
+  {
+    "id": "jurassic-code",
+    "type": "image",
+    "title": "Jurassic Code",
+    "occasion": "Visuel générique",
+    "year": 2023,
+    "image": "/img/visuals/Jurassic-code.png"
+  },
+  {
+    "id": "rennes-fablab",
+    "type": "image",
+    "title": "Rennes FABLAB",
+    "occasion": "Visuel agence Rennes",
+    "year": 2026,
+    "image": "/img/visuals/Rennes-FABLAB.jpg"
+  },
+  {
+    "id": "rennes-sallepause",
+    "type": "image",
+    "title": "Rennes Salle Pause",
+    "occasion": "Visuel agence Rennes",
+    "year": 2026,
+    "image": "/img/visuals/Rennes-SALLEPAUSE.jpg"
+  },
+  {
+    "id": "zenikar",
+    "type": "image",
+    "title": "Zenikar",
+    "occasion": "Zenikar",
+    "year": 2024,
+    "image": "/img/visuals/Zenikar.png"
+  },
+  {
+    "id": "zenikast",
+    "type": "image",
+    "title": "Zenikast",
+    "occasion": "Zenikast - visuel",
+    "year": 2023,
+    "image": "/img/visuals/Zenikast.png"
+  },
+  {
+    "id": "bache-avec-oeillet",
+    "type": "image",
+    "title": "Rennes - Breizhcamp - Bâche avec oeillet",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/bache-avec-oeillet.jpg"
+  },
+  {
+    "id": "jurassic-stack",
+    "type": "image",
+    "title": "Breizhcamp 2023 - Jurassic Stack",
+    "occasion": "Breizhcamp 2023",
+    "year": 2023,
+    "image": "/img/visuals/jurassic-stack.jpg"
+  },
+  {
+    "id": "logo-ecocup",
+    "type": "image",
+    "title": "Breizhcamp 2024 - Logo Ecocup",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/logo-ecocup.png"
+  },
+  {
+    "id": "sticker-extinction",
+    "type": "image",
+    "title": "Breizhcamp 2024 - Sticker Extinction",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/sticker-extinction.jpg"
+  },
+  {
+    "id": "sticker-patch",
+    "type": "image",
+    "title": "Breizhcamp 2024 - Sticker Patch",
+    "occasion": "Breizhcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/sticker-patch.jpg"
+  },
+  {
+    "id": "sticker-stack",
+    "type": "image",
+    "title": "Breizhcamp 2023 - Sticker Stack",
+    "occasion": "Breizhcamp 2023",
+    "year": 2023,
+    "image": "/img/visuals/sticker-stack.jpg"
+  },
+  {
+    "id": "sticker-tricerat",
+    "type": "image",
+    "title": "Breizhcamp 2023 - Sticker Tricerat",
+    "occasion": "Breizhcamp 2023",
+    "year": 2023,
+    "image": "/img/visuals/sticker-tricerat.jpg"
+  },
+  {
+    "id": "zenikanard-secu",
+    "type": "image",
+    "title": "Zenikanard Sécu",
+    "occasion": "Rennes - Formation sécurité",
+    "year": 2024,
+    "image": "/img/visuals/zenikanard_secu.jpg"
+  },
+  {
+    "id": "zenikast-intro",
+    "type": "video",
+    "title": "Zenikast Intro",
+    "occasion": "Zenikast - intro",
+    "year": 2023,
+    "video": "/videos/Zenikast-intro.mp4"
+  },
+  {
+    "id": "zenikanard-oss",
+    "type": "video",
+    "title": "Zenikanard Zenika Open Source",
+    "occasion": "Zenika Open Source",
+    "year": 2025,
+    "video": "/videos/zenikanard-oss.mp4"
   }
 ]

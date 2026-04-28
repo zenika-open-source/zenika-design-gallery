@@ -13,6 +13,7 @@
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
 		</button>
 		<img id="lightbox-img" src="" alt="" />
+		<video id="lightbox-video" src="" controls autoplay loop playsinline style="display: none;"></video>
 		<div class="lightbox-info">
 			<h2 id="lightbox-title"></h2>
 			<p id="lightbox-description"></p>
@@ -27,36 +28,58 @@
 		const prevBtn = document.getElementById('prev-lightbox');
 		const nextBtn = document.getElementById('next-lightbox');
 		const img = document.getElementById('lightbox-img') as HTMLImageElement;
+		const video = document.getElementById('lightbox-video') as HTMLVideoElement;
 		const title = document.getElementById('lightbox-title');
 		const description = document.getElementById('lightbox-description');
 		const cards = Array.from(document.querySelectorAll('[data-lightbox]')) as HTMLElement[];
 		let currentIndex = 0;
 
+		function getVisibleCards() {
+			return Array.from(document.querySelectorAll('[data-lightbox]:not(.hidden)')) as HTMLElement[];
+		}
+
 		function showCard(index: number) {
-			if (index < 0) index = cards.length - 1;
-			if (index >= cards.length) index = 0;
+			const visibleCards = getVisibleCards();
+			if (visibleCards.length === 0) return;
+			
+			if (index < 0) index = visibleCards.length - 1;
+			if (index >= visibleCards.length) index = 0;
 			currentIndex = index;
 			
-			const card = cards[currentIndex];
+			const card = visibleCards[currentIndex];
 			if (!card) return;
 
-			const { image, title: text, occasion } = card.dataset;
-			if (img && title && description) {
-				img.src = image || '';
-				img.alt = text || '';
+			const { image, video: vidSrc, title: text, occasion } = card.dataset;
+			if (title && description) {
+				if (vidSrc) {
+					img.style.display = 'none';
+					video.style.display = 'block';
+					video.src = vidSrc;
+				} else {
+					video.style.display = 'none';
+					video.pause();
+					img.style.display = 'block';
+					img.src = image || '';
+					img.alt = text || '';
+				}
 				title.textContent = text || '';
 				description.textContent = occasion || '';
 			}
 		}
 
-		cards.forEach((card, index) => {
+		cards.forEach((card) => {
 			card.addEventListener('click', () => {
-				showCard(index);
-				dialog?.showModal();
+				const visibleCards = getVisibleCards();
+				const index = visibleCards.indexOf(card);
+				if (index !== -1) {
+					showCard(index);
+					dialog?.showModal();
+				}
 			});
 		});
 
 		closeBtn?.addEventListener('click', () => {
+			video?.pause();
 			dialog?.close();
 		});
 
@@ -181,7 +204,7 @@
 		right: var(--spacing-md);
 	}
 
-	img {
+	img, video {
 		max-width: 100%;
 		max-height: 75vh;
 		width: auto;
