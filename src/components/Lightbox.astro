@@ -6,6 +6,12 @@
 		<button id="close-lightbox" class="close-btn" aria-label="Fermer">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 		</button>
+		<button id="prev-lightbox" class="nav-btn prev-btn" aria-label="Précédent">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+		</button>
+		<button id="next-lightbox" class="nav-btn next-btn" aria-label="Suivant">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+		</button>
 		<img id="lightbox-img" src="" alt="" />
 		<div class="lightbox-info">
 			<h2 id="lightbox-title"></h2>
@@ -18,26 +24,56 @@
 	function setupLightbox() {
 		const dialog = document.getElementById('lightbox-dialog') as HTMLDialogElement;
 		const closeBtn = document.getElementById('close-lightbox');
+		const prevBtn = document.getElementById('prev-lightbox');
+		const nextBtn = document.getElementById('next-lightbox');
 		const img = document.getElementById('lightbox-img') as HTMLImageElement;
 		const title = document.getElementById('lightbox-title');
 		const description = document.getElementById('lightbox-description');
-		const cards = document.querySelectorAll('[data-lightbox]');
+		const cards = Array.from(document.querySelectorAll('[data-lightbox]')) as HTMLElement[];
+		let currentIndex = 0;
 
-		cards.forEach(card => {
+		function showCard(index: number) {
+			if (index < 0) index = cards.length - 1;
+			if (index >= cards.length) index = 0;
+			currentIndex = index;
+			
+			const card = cards[currentIndex];
+			if (!card) return;
+
+			const { image, title: text, occasion } = card.dataset;
+			if (img && title && description) {
+				img.src = image || '';
+				img.alt = text || '';
+				title.textContent = text || '';
+				description.textContent = occasion || '';
+			}
+		}
+
+		cards.forEach((card, index) => {
 			card.addEventListener('click', () => {
-				const { image, title: text, occasion } = (card as HTMLElement).dataset;
-				if (img && title && description && dialog) {
-					img.src = image || '';
-					img.alt = text || '';
-					title.textContent = text || '';
-					description.textContent = occasion || '';
-					dialog.showModal();
-				}
+				showCard(index);
+				dialog?.showModal();
 			});
 		});
 
 		closeBtn?.addEventListener('click', () => {
 			dialog?.close();
+		});
+
+		prevBtn?.addEventListener('click', (e) => {
+			e.stopPropagation();
+			showCard(currentIndex - 1);
+		});
+
+		nextBtn?.addEventListener('click', (e) => {
+			e.stopPropagation();
+			showCard(currentIndex + 1);
+		});
+
+		document.addEventListener('keydown', (e) => {
+			if (!dialog?.open) return;
+			if (e.key === 'ArrowLeft') showCard(currentIndex - 1);
+			if (e.key === 'ArrowRight') showCard(currentIndex + 1);
 		});
 
 		// Close on click outside
@@ -111,6 +147,38 @@
 
 	.close-btn:hover {
 		transform: rotate(90deg) scale(1.1);
+	}
+
+	.nav-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(255, 255, 255, 0.8);
+		color: var(--zenika-black);
+		border: none;
+		border-radius: 50%;
+		width: 48px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		z-index: 10;
+		transition: var(--transition-smooth);
+		box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	}
+
+	.nav-btn:hover {
+		background: var(--zenika-white);
+		transform: translateY(-50%) scale(1.1);
+	}
+
+	.prev-btn {
+		left: var(--spacing-md);
+	}
+
+	.next-btn {
+		right: var(--spacing-md);
 	}
 
 	img {
