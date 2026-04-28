@@ -1,8 +1,8 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import VisualCard from '../components/VisualCard.astro';
-import Lightbox from '../components/Lightbox.astro';
-import visualsData from '../data/visuals.json';
+import MainLayout from "../layouts/MainLayout.astro";
+import VisualCard from "../components/VisualCard.astro";
+import Lightbox from "../components/Lightbox.astro";
+import visualsData from "../data/visuals.json";
 
 const visuals = [...visualsData].sort((a, b) => {
 	const yearA = parseInt(a.year as unknown as string) || 0;
@@ -15,7 +15,10 @@ const visuals = [...visualsData].sort((a, b) => {
 	<section class="container section-padding">
 		<div class="hero">
 			<h1><span class="text-red">Design</span> Gallery</h1>
-			<p class="subtitle">Une rétrospective des visuels créés pour les conférences et événements Zenika.</p>
+			<p class="subtitle">
+				Une rétrospective des visuels créés pour les conférences,
+				événements ou pour les agences Zenika.
+			</p>
 		</div>
 
 		<div class="filters">
@@ -25,38 +28,40 @@ const visuals = [...visualsData].sort((a, b) => {
 		</div>
 
 		<div class="gallery-grid">
-			{visuals.map((visual) => (
-				<VisualCard 
-					title={visual.title}
-					occasion={visual.occasion}
-					year={visual.year}
-					image={visual.image}
-					video={visual.video}
-					type={visual.type}
-				/>
-			))}
+			{
+				visuals.map((visual) => (
+					<VisualCard
+						title={visual.title}
+						occasion={visual.occasion}
+						year={visual.year}
+						image={visual.image}
+						video={visual.video}
+						type={visual.type}
+					/>
+				))
+			}
 		</div>
 	</section>
 	<Lightbox />
 
 	<script>
 		function setupFilters() {
-			const filterBtns = document.querySelectorAll('.filter-btn');
-			const cards = document.querySelectorAll('.visual-card');
+			const filterBtns = document.querySelectorAll(".filter-btn");
+			const cards = document.querySelectorAll(".visual-card");
 
-			filterBtns.forEach(btn => {
-				btn.addEventListener('click', () => {
-					filterBtns.forEach(b => b.classList.remove('active'));
-					btn.classList.add('active');
+			filterBtns.forEach((btn) => {
+				btn.addEventListener("click", () => {
+					filterBtns.forEach((b) => b.classList.remove("active"));
+					btn.classList.add("active");
 
 					const filterValue = (btn as HTMLElement).dataset.filter;
 
-					cards.forEach(card => {
+					cards.forEach((card) => {
 						const cardType = (card as HTMLElement).dataset.type;
-						if (filterValue === 'all' || cardType === filterValue) {
-							card.classList.remove('hidden');
+						if (filterValue === "all" || cardType === filterValue) {
+							card.classList.remove("hidden");
 						} else {
-							card.classList.add('hidden');
+							card.classList.add("hidden");
 						}
 					});
 				});
@@ -64,7 +69,7 @@ const visuals = [...visualsData].sort((a, b) => {
 		}
 
 		setupFilters();
-		document.addEventListener('astro:after-swap', setupFilters);
+		document.addEventListener("astro:after-swap", setupFilters);
 	</script>
 </MainLayout>
 
@@ -88,7 +93,8 @@ const visuals = [...visualsData].sort((a, b) => {
 		transition: var(--transition-smooth);
 	}
 
-	.filter-btn.active, .filter-btn:hover {
+	.filter-btn.active,
+	.filter-btn:hover {
 		background: var(--zenika-red);
 		color: var(--zenika-white);
 	}

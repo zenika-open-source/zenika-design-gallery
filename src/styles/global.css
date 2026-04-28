@@ -9,6 +9,11 @@
   --zenika-gray-light: #F9F9F9;
   --zenika-gray: #E0E0E0;
   
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --text-muted: #666666;
+  --btn-overlay: rgba(255, 255, 255, 0.8);
+  --img-bg: #f0f0f0;
+  
   --font-main: 'Nunito', sans-serif;
   
   --spacing-sm: 0.5rem;
@@ -20,6 +25,18 @@
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.05);
   --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+html.dark {
+  --zenika-black: #FFFFFF;
+  --zenika-white: #121212;
+  --zenika-gray-light: #1E1E1E;
+  --zenika-gray: #333333;
+  
+  --header-bg: rgba(18, 18, 18, 0.9);
+  --text-muted: #AAAAAA;
+  --btn-overlay: rgba(30, 30, 30, 0.8);
+  --img-bg: #1E1E1E;
 }
 
 * {
@@ -34,6 +51,7 @@ body {
   color: var(--zenika-black);
   line-height: 1.6;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4 {
