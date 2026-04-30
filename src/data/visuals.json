@@ -240,6 +240,14 @@
     "image": "/img/visuals/zenika-open-source-with-text.png"
   },
   {
+    "id": "zenika-open-source-world",
+    "type": "image",
+    "title": "Zenika Open Source World",
+    "occasion": "Zenika Open Source",
+    "year": 2023,
+    "image": "/img/visuals/zenika-open-source-world.png"
+  },
+  {
     "id": "bingoz",
     "type": "image",
     "title": "Bingoz",
@@ -262,6 +270,30 @@
     "occasion": "Visuel générique",
     "year": 2023,
     "image": "/img/visuals/Jurassic-code.png"
+  },
+  {
+    "id": "biztrot-cafe-logo",
+    "type": "image",
+    "title": "Biztrot Café Logo",
+    "occasion": "Logo pour le Biztrot Café (2026)",
+    "year": 2026,
+    "image": "/img/visuals/Biztrot-cafe-logo.png"
+  },
+  {
+    "id": "biztrot-cafe",
+    "type": "image",
+    "title": "Biztrot Café",
+    "occasion": "Visuel pour le Biztrot Café (2026)",
+    "year": 2026,
+    "image": "/img/visuals/Biztrot-cafe.png"
+  },
+  {
+    "id": "biztrot-cafe-intro",
+    "type": "video",
+    "title": "Biztrot Café Intro",
+    "occasion": "Vidéo d'introduction pour le Biztrot Café (2026)",
+    "year": 2026,
+    "video": "/videos/Biztrot-Cafe-intro.mp4"
   },
   {
     "id": "rennes-fablab",
