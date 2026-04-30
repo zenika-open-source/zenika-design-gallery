@@ -139,7 +139,7 @@
     "id": "in-pissette-we-trust",
     "type": "image",
     "title": "In Pissette We Trust",
-    "occasion": "Visuel Lille",
+    "occasion": "Visuel Lyon",
     "year": "",
     "image": "/img/visuals/In Pissette We Trust.jpg"
   },
@@ -406,5 +406,141 @@
     "occasion": "Zenika Open Source",
     "year": 2025,
     "video": "/videos/zenikanard-oss.mp4"
+  },
+  {
+    "id": "devfest-lyon-2025",
+    "type": "image",
+    "title": "DevFest Lyon 2025",
+    "occasion": "DevFest Lyon 2025",
+    "year": 2025,
+    "image": "/img/visuals/Devfest_Lyon_2025.png"
+  },
+  {
+    "id": "devfest-lyon-2025-bugnes",
+    "type": "image",
+    "title": "DevFest Lyon 2025 (Bugnes)",
+    "occasion": "DevFest Lyon 2025",
+    "year": 2025,
+    "image": "/img/visuals/Devfest_Lyon_2025-bugnes.png"
+  },
+  {
+    "id": "devfest-lyon-2025-pralines",
+    "type": "image",
+    "title": "DevFest Lyon 2025 (Pralines)",
+    "occasion": "DevFest Lyon 2025",
+    "year": 2025,
+    "image": "/img/visuals/Devfest_Lyon_2025-pralines.png"
+  },
+  {
+    "id": "mixit-2022",
+    "type": "image",
+    "title": "MiXiT 2022",
+    "occasion": "MiXiT 2022",
+    "year": 2022,
+    "image": "/img/visuals/Mixit_2022.png"
+  },
+  {
+    "id": "mixit-2022-zenikermesse",
+    "type": "image",
+    "title": "MiXiT 2022 (Zenikermesse)",
+    "occasion": "MiXiT 2022",
+    "year": 2022,
+    "image": "/img/visuals/Mixit_2022_Zenikermesse.jpg"
+  },
+  {
+    "id": "mixit-2023",
+    "type": "image",
+    "title": "MiXiT 2023",
+    "occasion": "MiXiT 2023",
+    "year": 2023,
+    "image": "/img/visuals/Mixit_2023.png"
+  },
+  {
+    "id": "mixit-2023-borne",
+    "type": "image",
+    "title": "MiXiT 2023 (Borne)",
+    "occasion": "MiXiT 2023",
+    "year": 2023,
+    "image": "/img/visuals/Mixit_2023_borne.png"
+  },
+  {
+    "id": "mixit-2023-playing-with-legacy",
+    "type": "image",
+    "title": "MiXiT 2023 (Playing with legacy)",
+    "occasion": "MiXiT 2023",
+    "year": 2023,
+    "image": "/img/visuals/Mixit_2023_playing_with_legacy.png"
+  },
+  {
+    "id": "mixit-2023-playing-with-legacy-blanc",
+    "type": "image",
+    "title": "MiXiT 2023 (Playing with legacy blanc)",
+    "occasion": "MiXiT 2023",
+    "year": 2023,
+    "image": "/img/visuals/Mixit_2023_playing_with_legacy_blanc.png"
+  },
+  {
+    "id": "volcamp-2023",
+    "type": "image",
+    "title": "Volcamp 2023",
+    "occasion": "Volcamp 2023",
+    "year": 2023,
+    "image": "/img/visuals/Volcamp_2023.png"
+  },
+  {
+    "id": "volcamp-2024",
+    "type": "image",
+    "title": "Volcamp 2024",
+    "occasion": "Volcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/Volcamp_2024.png"
+  },
+  {
+    "id": "volcamp-2024-sans-drapeaux",
+    "type": "image",
+    "title": "Volcamp 2024 (Sans drapeaux)",
+    "occasion": "Volcamp 2024",
+    "year": 2024,
+    "image": "/img/visuals/Volcamp_2024_sans_drapeaux.png"
+  },
+  {
+    "id": "logo-batman-tshirt",
+    "type": "image",
+    "title": "Logo Batman (T-shirt)",
+    "occasion": "T-shirt",
+    "year": 2017,
+    "image": "/img/visuals/Logo batman - tshirt.jpg"
+  },
+  {
+    "id": "logo-superman-tshirt",
+    "type": "image",
+    "title": "Logo Superman (T-shirt)",
+    "occasion": "T-shirt",
+    "year": 2017,
+    "image": "/img/visuals/Logo superman - tshirt.jpg"
+  },
+  {
+    "id": "logo-wonderwoman-tshirt",
+    "type": "image",
+    "title": "Logo Wonderwoman (T-shirt)",
+    "occasion": "T-shirt",
+    "year": 2017,
+    "image": "/img/visuals/Logo wonderwoman - Tshirt.jpg"
+  },
+  {
+    "id": "logo-captain-america-tshirt",
+    "type": "image",
+    "title": "Logo Captain America (T-shirt)",
+    "occasion": "T-shirt",
+    "year": 2017,
+    "image": "/img/visuals/captain america logo-tshirt.jpg"
+  },
+  {
+    "id": "logo-spiderman-tshirt",
+    "type": "image",
+    "title": "Logo Spiderman (T-shirt)",
+    "occasion": "T-shirt",
+    "year": 2017,
+    "image": "/img/visuals/logo spiderman-tshirt .jpg"
   }
 ]
